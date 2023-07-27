@@ -2,7 +2,7 @@ package com.fmatheus.app.config;
 
 
 
-import com.fmatheus.app.AuthApplication;
+import com.fmatheus.app.AuthorizationServerApplication;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.config.YamlPropertiesFactoryBean;
 import org.springframework.context.MessageSource;
@@ -15,7 +15,7 @@ import org.springframework.core.io.ClassPathResource;
 import java.util.Properties;
 
 @Configuration
-@ComponentScan(basePackageClasses = AuthApplication.class)
+@ComponentScan(basePackageClasses = AuthorizationServerApplication.class)
 public class BeanConfiguration {
 
     @Bean

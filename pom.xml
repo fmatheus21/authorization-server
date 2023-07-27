@@ -10,10 +10,10 @@
     <!-- lookup parent from repository -->
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.fmatheus</groupId>
-    <artifactId>auth</artifactId>
+    <artifactId>authorization-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>auth</name>
-    <description>Autenticação</description>
+    <name>authorization-server</name>
+    <description>Authorization Server</description>
 
     <properties>
         <java.version>17</java.version>
