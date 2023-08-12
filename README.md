@@ -1,6 +1,6 @@
 <h1 align="center">Authorization Server - Spring Boot 3.1.2</h1>
 
->## <center>  🚧 Concluded 🚧  </center>
+>## <h1 align="center">  🚧 Concluded 🚧  </h1>
 
 
 </br></br>
