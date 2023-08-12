@@ -3,8 +3,6 @@ package com.fmatheus.app.model.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.io.Serial;
-import java.io.Serializable;
 import java.util.Collection;
 
 

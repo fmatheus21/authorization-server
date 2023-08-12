@@ -12,6 +12,8 @@ message:
     exist-email: O Email já está cadastrado.
     record-not-exist: O registro não encontrado.
     data-integrity-violation: O regitro não pôde ser excluído devido a uma Violação de Integridade. Este registro está protegido pelo sistema.
+    user-inative: O usuário está inativo. Por favor, contacte o administrador.
+    user-not-found: O usuário não foi encontrado.
   success:
     delete: Registro excluído com sucesso.
     update: Registro atualizado com sucesso.

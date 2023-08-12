@@ -2,7 +2,7 @@ CREATE TABLE user (
   id binary(16) NOT NULL,
   id_person binary(16) NOT NULL,
   username varchar(50) NOT NULL,
-  password varchar(100) NOT NULL,
+  password varchar(200) NOT NULL,
   active tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (id),
   UNIQUE KEY id_UNIQUE (id),
@@ -15,5 +15,5 @@ INSERT INTO user (id, id_person, username, password, active) VALUES (
 UUID_TO_BIN('ae46dc08-2c64-11ee-a204-581122c7752d'),
 UUID_TO_BIN('581c2c14-f5f4-11ed-9216-7085c2be6d69'),
 '67780886050',
-'123456',
+'$2a$10$04MQf8gTMmbC1aosZajxeO.r1fCtjLbvpVfbZQJD7XbR0oFQ9X1AC',
 1);

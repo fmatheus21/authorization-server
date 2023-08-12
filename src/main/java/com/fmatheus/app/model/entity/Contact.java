@@ -29,7 +29,6 @@ public class Contact extends Base{
     @Column(name = "phone", nullable = false, length = 15)
     private String phone;
 
-    @NotNull
     @JoinColumn(name = "id_person", referencedColumnName = "id", nullable = false)
     @OneToOne(optional = false)
     private Person person;

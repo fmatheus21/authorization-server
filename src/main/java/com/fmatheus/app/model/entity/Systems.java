@@ -3,11 +3,6 @@ package com.fmatheus.app.model.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-
-import java.io.Serial;
-import java.io.Serializable;
-import java.util.Collection;
-
 @Setter
 @Getter
 @NoArgsConstructor
@@ -23,7 +18,7 @@ public class Systems extends Base {
     @Column(name = "name", nullable = false, length = 20)
     private String name;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "system")
-    private Collection<Permission> permissions;
+    /*@OneToMany(cascade = CascadeType.ALL, mappedBy = "system", fetch = FetchType.EAGER)
+    private Collection<Permission> permissions;*/
 
 }

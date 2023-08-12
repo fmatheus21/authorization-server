@@ -1,6 +1,21 @@
+authorization-server:
+  security:
+    registred-client:
+      client-id-one: 'clientid-client_credentials'
+      client-secret-one: '975731ab-34d0-11ee-8422-581122c7752d'
+      client-id-two: 'clientid-authorization_code'
+      client-secret-two: '17686e8b-34d2-11ee-8422-581122c7752d'
+    jks:
+      keypass: 123456
+      storepass: 123456
+      alias: oauthkey
+      path: keystore/oauthkey.jks
+    rsa:
+      private-key: classpath:certs/private.pem
+      public-key: classpath:certs/public.pem
 logging:
   pattern:
-    level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
+    level: '%5p [${spring.properties.name:},%X{traceId:-},%X{spanId:-}]'
 server:
   port: 9000
 spring:

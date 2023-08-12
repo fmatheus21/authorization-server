@@ -14,10 +14,12 @@ public enum MessagesEnum {
     ERROR_NOT_READABLE(HttpStatus.BAD_REQUEST, "message.error.not-readable"),
     ERROR_NOT_UNAUTHORIZED(HttpStatus.UNAUTHORIZED, "message.error.unauthorized"),
     ERROR_EXIST_RECORD(HttpStatus.BAD_REQUEST, "message.error.exist-record"),
+    ERROR_USER_NOT_FOUND(HttpStatus.BAD_REQUEST, "message.error.user-not-found"),
     ERROR_EXIST_DOCUMENT(HttpStatus.BAD_REQUEST, "message.error.exist-document"),
     ERROR_EXIST_EMAIL(HttpStatus.BAD_REQUEST, "message.error.exist-email"),
     ERROR_RECORD_NOT_EXIST(HttpStatus.BAD_REQUEST, "message.error.record-not-exist"),
-    ERROR_DATA_INTEGRITY_VIOLATION(HttpStatus.NOT_ACCEPTABLE, "message.error.data-integrity-violation");
+    ERROR_DATA_INTEGRITY_VIOLATION(HttpStatus.NOT_ACCEPTABLE, "message.error.data-integrity-violation"),
+    ERROR_USER_INATIVE(HttpStatus.UNAUTHORIZED, "message.error.user-inative");
 
 
     private final HttpStatus httpSttus;

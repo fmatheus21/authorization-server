@@ -1,13 +1,15 @@
 package com.fmatheus.app.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 import lombok.*;
 
-
-import java.io.Serial;
-import java.io.Serializable;
 import java.util.Collection;
 
+
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 @ToString
 @Setter
 @Getter
@@ -39,5 +41,6 @@ public class User extends Base {
     @JoinTable(name = "user_permission_join", joinColumns = @JoinColumn(name = "id_user"), inverseJoinColumns = @JoinColumn(name = "id_permission"))
     @ManyToMany(fetch = FetchType.EAGER)
     private Collection<Permission> permissions;
+
 
 }
